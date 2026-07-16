@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Herson Taekwondo | Academia de Artes Marciales — Disciplina y Valores</title>
+  <meta name="description" content="Herson Taekwondo: academia de artes marciales bajo la metodología World Taekwondo. Clases de taekwondo para niños, jóvenes y adultos, con enfoque en disciplina, valores y preparación para competencia. Escríbenos por Instagram.">
+  <meta name="keywords" content="taekwondo, academia de taekwondo, clases de taekwondo, artes marciales, world taekwondo, taekwondo para niños, taekwondo competencia, cinturón negro, Herson Taekwondo, academia.herson">
+  <meta property="og:title" content="Herson Taekwondo | Academia de Artes Marciales">
+  <meta property="og:description" content="Disciplina, técnica y valores bajo la metodología World Taekwondo. Clases para niños, jóvenes y adultos. Escríbenos por Instagram.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="imagenes/instructor-entrenamiento.jpg">
+  <link rel="icon" href="imagenes/logo-transparente.png" type="image/png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SportsActivityLocation",
+    "name": "Herson Taekwondo",
+    "description": "Academia de artes marciales formada bajo la metodología World Taekwondo, con clases para niños, jóvenes y adultos enfocadas en disciplina, valores y preparación para competencia.",
+    "logo": "imagenes/logo-transparente.png",
+    "image": "imagenes/instructor-entrenamiento.jpg",
+    "sameAs": [
+      "https://www.instagram.com/academia.herson",
+      "https://www.facebook.com/share/1bbBJNzHpL/",
+      "https://www.tiktok.com/@academia.herson",
+      "https://www.youtube.com/channel/UCNYNA20LH6HdK9kWXkfsKpA"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════════════
+       LOADER
+  ══════════════════════════════════════════════════════ -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-bulb">
+      <img src="imagenes/logo-transparente.png" alt="">
+    </div>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    <span class="loader-text">Cargando...</span>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════════════════════ -->
+  <header id="navbar" role="banner">
+    <div class="container">
+      <div class="nav-inner">
+
+        <a href="#hero" class="nav-logo" aria-label="Herson Taekwondo — inicio">
+          <div class="nav-logo-icon" aria-hidden="true">
+            <img src="imagenes/logo-transparente.png" alt="">
+          </div>
+          <div class="nav-logo-copy">
+            <span>Herson</span>
+            <span>Taekwondo</span>
+          </div>
+        </a>
+
+        <nav aria-label="Navegación principal">
+          <ul class="nav-links">
+            <li><a href="#why">Nuestra Academia</a></li>
+            <li><a href="#ambientes">Nuestras Clases</a></li>
+            <li><a href="#proceso">Cómo Unirte</a></li>
+            <li><a href="#producto">Cinturones</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <a href="https://www.instagram.com/academia.herson" target="_blank" rel="noopener noreferrer" class="btn-gold nav-cta" style="font-size:13px; padding:12px 26px;">
+          Escríbenos
+        </a>
+
+        <button class="hamburger" id="hamburger"
+                aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mob-menu" aria-label="Menú móvil">
+      <a href="#why">Nuestra Academia</a>
+      <a href="#ambientes">Nuestras Clases</a>
+      <a href="#proceso">Cómo Unirte</a>
+      <a href="#producto">Cinturones</a>
+      <a href="#contacto">Contacto</a>
+      <a href="https://www.instagram.com/academia.herson" target="_blank" rel="noopener noreferrer">Escríbenos por Instagram →</a>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════════════════ -->
+  <main>
+    <section id="hero" aria-labelledby="hero-heading">
+
+      <!-- Parallax background image (fixed) -->
+      <div class="hero-bg" aria-hidden="true"></div>
+      <!-- Dark overlays -->
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-vignette" aria-hidden="true"></div>
+      <!-- Grid texture -->
+      <div class="hero-grid" aria-hidden="true"></div>
+      <!-- Canvas particle orbs -->
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+      <!-- Light shafts -->
+      <div class="hero-rays" aria-hidden="true">
+        <div class="hero-ray r1"></div>
+        <div class="hero-ray r2"></div>
+        <div class="hero-ray r3"></div>
+        <div class="hero-ray r4"></div>
+        <div class="hero-ray r5"></div>
+      </div>
+      <!-- Film grain overlay -->
+      <div class="hero-grain" aria-hidden="true"></div>
+      <!-- One-shot scan reveal -->
+      <div class="hero-scanline" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero-content">
+
+          <!-- Live badge -->
+          <div class="hero-badge" id="hero-badge" aria-hidden="true">
+            <div class="badge-dot"></div>
+            Academia Herson Taekwondo
+          </div>
+
+          <!-- Animated title -->
+          <h1 class="hero-title" id="hero-heading">
+            <span class="line"><span>Cuerpo fuerte.</span></span>
+            <span class="line"><span>Mente disciplinada.</span></span>
+            <span class="line"><span class="accent">Espíritu indomable.</span></span>
+          </h1>
+
+          <!-- Subtitle -->
+          <p class="hero-sub" id="hero-sub">
+            <strong>Herson Taekwondo</strong> es una academia de artes marciales formada bajo la metodología de <strong>World Taekwondo</strong>, donde niños, jóvenes y adultos desarrollan disciplina, técnica y valores para toda la vida — dentro y fuera del dojang.
+          </p>
+
+          <!-- CTAs -->
+          <div class="hero-ctas" id="hero-ctas">
+            <a href="https://www.instagram.com/academia.herson" target="_blank" rel="noopener noreferrer" class="btn-gold">
+              Visita nuestro Instagram
+              <i class="fa-solid fa-arrow-right" style="font-size:12px;"></i>
+            </a>
+            <a href="https://www.facebook.com/share/1bbBJNzHpL/" target="_blank" rel="noopener noreferrer" class="btn-outline">
+              <i class="fa-brands fa-facebook-f" style="font-size:15px;"></i>
+              Síguenos en Facebook
+            </a>
+            <a href="#ambientes" class="btn-outline">
+              <i class="fa-solid fa-hand-fist" style="font-size:15px;"></i>
+              Conoce Nuestras Clases
+            </a>
+          </div>
+
+          <!-- Trust bar -->
+          <div class="hero-trust" id="hero-trust" aria-label="Credenciales">
+            <div class="trust-item">
+              <i class="fa-solid fa-shield-halved"></i>
+              Metodología World Taekwondo
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-trophy"></i>
+              Formación en Competencia
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-heart"></i>
+              Disciplina y Valores
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-people-group"></i>
+              Niños, Jóvenes y Adultos
+            </div>
+          </div>
+
+        </div><!-- /.hero-content -->
+      </div>
+
+      <!-- Scroll cue -->
+      <div class="scroll-cue" aria-hidden="true">
+        <div class="scroll-mouse">
+          <div class="scroll-mouse-dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         MARQUEE
+    ══════════════════════════════════════════════════ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-inner" id="marquee"></div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════
+         WHY — Features
+    ══════════════════════════════════════════════════ -->
+    <section id="why" aria-labelledby="why-heading">
+      <div class="container">
+
+        <div class="why-header">
+          <div class="reveal">
+            <div class="label">La diferencia Herson Taekwondo</div>
+            <h2 class="why-quote" id="why-heading">
+              No solo enseñamos patadas…
+              <em> formamos el carácter.</em>
+            </h2>
+          </div>
+          <p class="why-sub reveal d2">
+            Entrenamos bajo la metodología oficial de World Taekwondo, en un ambiente de disciplina y respeto donde cada alumno crece dentro y fuera del dojang.
+          </p>
+        </div>
+
+        <div class="features-grid">
+
+          <div class="f-card reveal">
+            <div class="f-num" aria-hidden="true">01</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <h3>Metodología World Taekwondo</h3>
+            <p>Entrenamos bajo los estándares técnicos de la federación mundial de Taekwondo, con una progresión clara de grados Kup y Dan.</p>
+          </div>
+
+          <div class="f-card reveal d1">
+            <div class="f-num" aria-hidden="true">02</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-trophy"></i>
+            </div>
+            <h3>Formación para Competencia</h3>
+            <p>Nuestros alumnos viven la experiencia real del torneo, preparándose técnica y mentalmente para competir con disciplina.</p>
+          </div>
+
+          <div class="f-card reveal d2">
+            <div class="f-num" aria-hidden="true">03</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <h3>Disciplina, Respeto y Valores</h3>
+            <p>Cada clase refuerza los cinco tenets del Taekwondo: cortesía, integridad, perseverancia, autocontrol y espíritu indomable.</p>
+          </div>
+
+          <div class="f-card reveal d3">
+            <div class="f-num" aria-hidden="true">04</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-people-group"></i>
+            </div>
+            <h3>Para Toda la Familia</h3>
+            <p>Formación para niños, jóvenes y adultos en un mismo dojang, bajo la misma comunidad: la familia Herson.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         AMBIENTES — Nuestras Clases
+    ══════════════════════════════════════════════════ -->
+    <section id="ambientes" aria-labelledby="amb-heading">
+      <div class="container">
+
+        <div class="ambientes-top">
+          <div class="reveal">
+            <div class="label">Nuestras Clases</div>
+            <h2 class="section-title" id="amb-heading">
+              Un mismo dojang,<br>
+              <span class="gold">una formación integral</span>
+            </h2>
+            <p style="color:var(--gray-dark); margin-top:16px; font-size:15.5px; max-width:440px; line-height:1.7;">
+              Escríbenos por Instagram o Facebook para conocer horarios y disponibilidad según la categoría.
+            </p>
+          </div>
+          <div class="reveal d2">
+            <span class="ambiente-pill">¿Cuál es la tuya?</span>
+          </div>
+        </div>
+
+        <div class="ambientes-grid">
+
+          <!-- Juvenil / Adultos -->
+          <div class="amb-card reveal">
+            <img class="amb-img"
+              src="imagenes/equipo-avanzado.jpg"
+              alt="Instructor de Herson Taekwondo junto a alumnas con cinturón negro, azul y rojo frente a las banderas de World Taekwondo, México y Corea">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap"
+                   style="background:rgba(230,185,44,0.15); border-color:rgba(230,185,44,0.4);"
+                   aria-hidden="true">
+                <i class="fa-solid fa-user-graduate" style="color:var(--gold-light);"></i>
+              </div>
+              <h3>Formación Juvenil</h3>
+              <p>Técnica, disciplina y progresión de grado bajo la guía directa de nuestro cuerpo de instructores.</p>
+              <div class="amb-temp">Escríbenos para conocer el grupo indicado</div>
+            </div>
+          </div>
+
+          <!-- Competencia -->
+          <div class="amb-card reveal d1">
+            <img class="amb-img"
+              src="imagenes/alumnas-competencia.jpg"
+              alt="Alumnas de Herson Taekwondo compitiendo en combate durante un torneo de taekwondo">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap"
+                   style="background:rgba(254,0,0,0.12); border-color:rgba(254,0,0,0.35);"
+                   aria-hidden="true">
+                <i class="fa-solid fa-trophy" style="color:#ff6b6b;"></i>
+              </div>
+              <h3>Competencia y Alto Rendimiento</h3>
+              <p>Preparación técnica y mental para quienes buscan representar a Herson en torneo.</p>
+              <div class="amb-temp">Cupo sujeto a evaluación del instructor</div>
+            </div>
+          </div>
+
+          <!-- Torneos -->
+          <div class="amb-card reveal d2">
+            <img class="amb-img"
+              src="imagenes/alumno-torneo.jpg"
+              alt="Alumno de Herson Taekwondo en la zona de competencia de un torneo regional de taekwondo">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap"
+                   style="background:rgba(207,106,2,0.15); border-color:rgba(207,106,2,0.4);"
+                   aria-hidden="true">
+                <i class="fa-solid fa-flag-checkered" style="color:#f0a24d;"></i>
+              </div>
+              <h3>Experiencia en Torneo</h3>
+              <p>Acompañamos a nuestros alumnos a competencias regionales, viviendo la disciplina del combate real.</p>
+              <div class="amb-temp">Conoce las próximas fechas por Instagram</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         PROCESO — Cómo Unirte
+    ══════════════════════════════════════════════════ -->
+    <section id="proceso" aria-labelledby="proceso-heading">
+      <div class="container">
+
+        <div class="proceso-header reveal">
+          <div class="label">Cómo Unirte</div>
+          <h2 class="section-title" id="proceso-heading">
+            De espectador a <span class="gold">alumno Herson</span>
+          </h2>
+          <p>Empezar tu camino en el Taekwondo es más sencillo de lo que crees. Estos son los 3 pasos.</p>
+        </div>
+
+        <div class="proceso-grid">
+
+          <div class="proceso-step reveal">
+            <div class="step-number">Paso 01</div>
+            <h3>Escríbenos</h3>
+            <p>Contáctanos por Instagram o Facebook y cuéntanos la edad e interés de quien se va a inscribir.</p>
+          </div>
+
+          <div class="proceso-step reveal d1">
+            <div class="step-number">Paso 02</div>
+            <h3>Agenda tu Visita</h3>
+            <p>Coordinamos el mejor horario para conocer las instalaciones y presenciar una clase en el dojang.</p>
+          </div>
+
+          <div class="proceso-step reveal d2">
+            <div class="step-number">Paso 03</div>
+            <h3>Únete a la Familia Herson</h3>
+            <p>Recibe tu dobok y comienza tu camino en el Taekwondo, grado a grado, cinturón a cinturón.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         PRODUCTO — Sistema de Cinturones
+    ══════════════════════════════════════════════════ -->
+    <section id="producto" aria-labelledby="prod-heading">
+      <div class="container">
+        <div class="producto-wrap">
+
+          <!-- Info -->
+          <div class="reveal">
+            <div class="label">Sistema de Cinturones</div>
+            <h2 class="section-title" id="prod-heading">
+              El camino del<br>
+              <span class="gold">cinturón negro</span>
+            </h2>
+            <p class="producto-lead">
+              En Taekwondo, cada cinturón marca una etapa de disciplina, técnica y carácter. Así es el camino que recorre cada alumno de Herson.
+            </p>
+
+            <ul class="feature-rows" aria-label="Progresión de cinturones">
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-circle-dot"></i></div>
+                <div>
+                  <h4>Cinturón Blanco — El Inicio</h4>
+                  <p>Representa la base del aprendizaje: humildad, apertura y disposición para crecer desde cero.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-star"></i></div>
+                <div>
+                  <h4>Cinturón Amarillo — Los Primeros Pasos</h4>
+                  <p>Marca el inicio del progreso, cuando el alumno empieza a desarrollar confianza, energía y comprensión básica de la técnica.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-leaf"></i></div>
+                <div>
+                  <h4>Cinturón Verde — Crecimiento y Fuerza</h4>
+                  <p>Se asocia con el crecimiento, la perseverancia y la consolidación de los fundamentos técnicos.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-water"></i></div>
+                <div>
+                  <h4>Cinturón Azul — Concentración y Técnica</h4>
+                  <p>Simboliza la profundidad del entrenamiento, el enfoque y la mejora en la precisión y el control.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-fire"></i></div>
+                <div>
+                  <h4>Cinturón Rojo — Preparación y Responsabilidad</h4>
+                  <p>Indica una etapa avanzada, donde el alumno demuestra dominio técnico y capacidad de servir de ejemplo.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-crown"></i></div>
+                <div>
+                  <h4>Cinturón Negro — Maestría y Nuevo Comienzo</h4>
+                  <p>No es el final del camino: representa el inicio de una etapa superior de estudio, disciplina y liderazgo.</p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="specs-bar" role="list" aria-label="Datos rápidos del sistema de grados">
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">Kup</span>
+                <span class="spec-name">Grados de cinturón de color</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">Dan</span>
+                <span class="spec-name">Grados de cinturón negro</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">WT</span>
+                <span class="spec-name">Metodología oficial</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">도 Do</span>
+                <span class="spec-name">"Camino" — filosofía de vida</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Visual -->
+          <div class="reveal d2">
+            <div class="panel-scene">
+              <div class="led-panel-body"
+                   role="img" aria-label="Emblema de Herson Taekwondo">
+              </div>
+              <div class="p-badge pb-tl" aria-hidden="true">
+                <div class="p-badge-dot"></div>
+                Herson Taekwondo
+              </div>
+              <div class="p-badge pb-br" aria-hidden="true">
+                <i class="fa-solid fa-check" style="color:var(--gold);"></i>
+                Guía: Federico González
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         STATS — El Taekwondo en cifras
+    ══════════════════════════════════════════════════ -->
+    <section id="stats" aria-label="El Taekwondo en cifras">
+      <div class="container">
+        <div class="stats-grid reveal" role="list">
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="2000" data-suffix=""
+                 aria-label="deporte olímpico oficial desde el año 2000">0</div>
+            <div class="stat-lbl">Deporte Olímpico<br>oficial desde Sydney</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="5" data-suffix=""
+                 aria-label="5 tenets fundamentales">0</div>
+            <div class="stat-lbl">Tenets Fundamentales<br>del Taekwondo</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num" aria-label="metodología World Taekwondo">WT</div>
+            <div class="stat-lbl">Metodología<br>World Taekwondo</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num" aria-label="taekwondo significa el camino de pies y puños">태권도</div>
+            <div class="stat-lbl">"El camino de<br>pies y puños"</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         SECTORES — Los cinco tenets
+    ══════════════════════════════════════════════════ -->
+    <section id="sectores" aria-labelledby="sec-heading">
+      <div class="container">
+
+        <div class="sectores-hdr reveal">
+          <div class="label">Formación Integral</div>
+          <h2 class="section-title" id="sec-heading">
+            Los cinco tenets del <span class="gold">Taekwondo</span>
+          </h2>
+          <p>Cada entrenamiento en Herson refuerza estos valores, dentro y fuera del dojang.</p>
+        </div>
+
+        <div class="sectores-grid" role="list">
+          <div class="sector-card reveal" role="listitem">
+            <i class="fa-solid fa-hands-praying sector-icon" aria-hidden="true"></i>
+            <h3>Cortesía</h3>
+          </div>
+          <div class="sector-card reveal d1" role="listitem">
+            <i class="fa-solid fa-scale-balanced sector-icon" aria-hidden="true"></i>
+            <h3>Integridad</h3>
+          </div>
+          <div class="sector-card reveal d2" role="listitem">
+            <i class="fa-solid fa-hourglass-half sector-icon" aria-hidden="true"></i>
+            <h3>Perseverancia</h3>
+          </div>
+          <div class="sector-card reveal d3" role="listitem">
+            <i class="fa-solid fa-lock sector-icon" aria-hidden="true"></i>
+            <h3>Autocontrol</h3>
+          </div>
+          <div class="sector-card reveal d4" role="listitem">
+            <i class="fa-solid fa-fire-flame-curved sector-icon" aria-hidden="true"></i>
+            <h3>Espíritu Indomable</h3>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         CONTACTO
+    ══════════════════════════════════════════════════ -->
+    <section id="contacto" aria-labelledby="contact-heading">
+      <div class="container">
+
+        <div class="contact-hdr reveal">
+          <div class="label">Contacto</div>
+          <h2 class="section-title" id="contact-heading">
+            Da el primer paso hacia tu <span class="gold">cinturón negro</span>
+          </h2>
+          <p>Escríbenos por Instagram o Facebook y resolvemos tus dudas sobre clases y el proceso de inscripción.</p>
+        </div>
+
+        <div class="contact-box reveal">
+
+          <!-- Info panel -->
+          <div class="contact-info">
+            <h3>Escríbenos Directamente</h3>
+            <p class="ci-sub">Herson Taekwondo — formando alumnos con disciplina, valores y espíritu de competencia.</p>
+            <p class="ci-sub" style="margin-top:8px;">Profesor encargado: Federico González Bernal. Escuela en Sonora, México.</p>
+
+            <ul class="ci-list">
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Ubicación</h4>
+                  <p>Blvd. Santa Clara #55-A, Hermosillo, Sonora, México 83284</p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Teléfono</h4>
+                  <p><a href="tel:+526622447050">662 244 7050</a></p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>WhatsApp</h4>
+                  <p><a href="https://wa.me/526622447050" target="_blank" rel="noopener noreferrer">+52 1 662 244 7050</a></p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Correo</h4>
+                  <p><a href="mailto:hersonfgbQgmail.com">hersonfgbQgmail.com</a></p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Instagram</h4>
+                  <p><a href="https://www.instagram.com/academia.herson" target="_blank" rel="noopener noreferrer">@academia.herson</a></p>
+                  <a href="https://www.instagram.com/academia.herson" target="_blank"
+                     rel="noopener noreferrer" class="ci-wa-link">
+                    Enviar mensaje →
+                  </a>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Facebook</h4>
+                  <p>Herson Taekwondo</p>
+                  <a href="https://www.facebook.com/share/1bbBJNzHpL/" target="_blank"
+                     rel="noopener noreferrer" class="ci-wa-link">
+                    Ver página →
+                  </a>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-brands fa-tiktok"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>TikTok y YouTube</h4>
+                  <p>Videos de clases, técnica y competencias.</p>
+                  <a href="https://www.tiktok.com/@academia.herson" target="_blank"
+                     rel="noopener noreferrer" class="ci-wa-link">
+                    Ver TikTok →
+                  </a>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-paper-plane"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>¿Listo para empezar?</h4>
+                  <p>Cuéntanos la edad e interés de quien se va a inscribir y te respondemos por Instagram.</p>
+                </div>
+              </li>
+            </ul>
+
+            <div style="display:grid; grid-template-columns:repeat(2, minmax(0, 1fr)); gap:12px; margin-top:16px;">
+              <img src="imagenes/instructor-entrenamiento.jpg" alt="Instructor de Herson Taekwondo en entrenamiento" style="width:100%; height:160px; object-fit:cover; border-radius:16px;">
+              <img src="imagenes/equipo-avanzado.jpg" alt="Alumnos de Herson Taekwondo durante una clase" style="width:100%; height:160px; object-fit:cover; border-radius:16px;">
+            </div>
+          </div><!-- /.contact-info -->
+
+          <!-- Form -->
+          <div class="contact-form-wrap">
+            <h3>Solicitar Información</h3>
+            <form id="ig-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="f-name">Nombre del interesado</label>
+                  <input type="text" id="f-name" class="form-control"
+                         placeholder="Ej. Ana Pérez" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="f-interest">Categoría de interés</label>
+                  <select id="f-interest" class="form-control">
+                    <option>Infantil</option>
+                    <option>Juvenil</option>
+                    <option>Adultos</option>
+                    <option>Información general</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="f-msg">Cuéntanos más</label>
+                <textarea id="f-msg" class="form-control" rows="4" required
+                          placeholder="Edad, experiencia previa o cualquier duda que tengas…"></textarea>
+              </div>
+              <button type="submit" class="form-submit">
+                <i class="fa-brands fa-instagram"></i>
+                Enviar por Instagram
+              </button>
+              <p class="form-note">
+                Al enviar, se abrirá Instagram para que nos escribas directamente.
+              </p>
+            </form>
+          </div>
+
+        </div><!-- /.contact-box -->
+      </div>
+    </section>
+  </main>
+
+  <!-- ══════════════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════════ -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <img src="imagenes/logo-transparente.png" alt="">
+          <span>Herson Taekwondo</span>
+        </div>
+        <p class="footer-copy">
+          &copy; <span id="year"></span> Herson Taekwondo. Todos los derechos reservados.
+        </p>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/academia.herson" target="_blank"
+             rel="noopener noreferrer" class="footer-soc" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://www.facebook.com/share/1bbBJNzHpL/" target="_blank"
+             rel="noopener noreferrer" class="footer-soc" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://www.tiktok.com/@academia.herson" target="_blank"
+             rel="noopener noreferrer" class="footer-soc" aria-label="TikTok">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+          <a href="https://www.youtube.com/channel/UCNYNA20LH6HdK9kWXkfsKpA" target="_blank"
+             rel="noopener noreferrer" class="footer-soc" aria-label="YouTube">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════════════════════
+       FLOATING CTA
+  ══════════════════════════════════════════════════════ -->
+  <a href="https://www.instagram.com/academia.herson"
+     target="_blank" rel="noopener noreferrer"
+     class="float-btn" aria-label="Escríbenos por Instagram">
+    <i class="fa-brands fa-instagram"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
